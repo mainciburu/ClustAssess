@@ -10,6 +10,7 @@ seurat_clustering = function(object, resolution, seed, algorithm = 4, ...) {
     random.seed = seed,
     algorithm = algorithm,
     verbose = FALSE,
+    method = "igraph",
     ...
   )
   cluster.result[[colnames(cluster.result)[1]]]
